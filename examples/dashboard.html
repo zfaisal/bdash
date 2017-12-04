@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="../assets/hc/css/highcharts.css">
 
-
+    <link href="../assets/hc/css/top.css" rel="stylesheet" />
 
 
 </head>
@@ -159,76 +159,83 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
                             <div class="card card-stats">
-                                <div class="card-header" data-background-color="orange">
-                                    <i class="material-icons">content_copy</i>
-                                </div>
-                                <div class="card-content">
-                                    <p class="category">Used Space</p>
-                                    <h3 class="title">49/50
-                                        <small>GB</small>
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons text-danger">warning</i>
-                                        <a href="#pablo">Get More Space...</a>
+                              <div class="kpicontent">
+                                  <div class="kpi_header">
+                                  <a class="kpi_title block inherit-styles" href="/page/2121613077/kpis/details/176135459" data-original-title="Total Billings (Paid)">Total Billings (Paid)</a>
+                                    <div class="timeframe_option" data-original-title=""></div>
+                                  </div>
+                                  <div class="kpi_values">
+                                    <div class="big_number_wrapper">
+                                      <div class="big_number">$4,807,000.00</div>
+                                      <div class="big_number_option">Total Billings</div>
                                     </div>
-                                </div>
+                                  </div>
+                                  <div class="kpi_chart"><img src="data:image/png;base64,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" style="width: 199px; height: 115px;"></div>
+                              </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
                             <div class="card card-stats">
-                                <div class="card-header" data-background-color="green">
-                                    <i class="material-icons">store</i>
-                                </div>
-                                <div class="card-content">
-                                    <p class="category">Revenue</p>
-                                    <h3 class="title">$34,245</h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons">date_range</i> Last 24 Hours
+                              <div class="kpicontent">
+                                  <div class="kpi_header">
+                                  <a class="kpi_title block inherit-styles" href="/page/2121613077/kpis/details/176135459" data-original-title="Total Billings (Paid)">Total Billings</a>
+                                    <div class="timeframe_option" data-original-title=""></div>
+                                  </div>
+                                  <div class="kpi_values">
+                                    <div class="big_number_wrapper">
+                                      <div class="big_number">$12,175,300.00</div>
+                                      <div class="big_number_option">Total Billings</div>
                                     </div>
-                                </div>
+                                  </div>
+                                  <div class="kpi_chart" id='total-Billings'>
+
+                                  </div>
+                              </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header" data-background-color="red">
-                                    <i class="material-icons">info_outline</i>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                          <div class="card card-stats">
+                            <div class="kpicontent">
+                                <div class="kpi_header">
+                                <a class="kpi_title block inherit-styles" href="/page/2121613077/kpis/details/176135459" data-original-title="Total Billings (Paid)">Unbilled</a>
+                                  <div class="timeframe_option" data-original-title=""></div>
                                 </div>
-                                <div class="card-content">
-                                    <p class="category">Fixed Issues</p>
-                                    <h3 class="title">75</h3>
+                                <div class="kpi_values">
+                                  <div class="big_number_wrapper">
+                                    <div class="big_number">$3,268,800.00</div>
+                                    <div class="big_number_option">Total Billings</div>
+                                  </div>
                                 </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons">local_offer</i> Tracked from Github
-                                    </div>
+                                <div class="kpi_chart" id='total-Billings'>
+                                      <img src="data:image/png;base64,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" style="width: 199px; height: 115px;">
                                 </div>
                             </div>
+                          </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header" data-background-color="blue">
-                                    <i class="fa fa-twitter"></i>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                          <div class="card card-stats">
+                            <div class="kpicontent">
+                                <div class="kpi_header">
+                                <a class="kpi_title block inherit-styles" href="/page/2121613077/kpis/details/176135459" data-original-title="Total Billings (Paid)">Total Billings (Un-Paid)</a>
+                                  <div class="timeframe_option" data-original-title=""></div>
                                 </div>
-                                <div class="card-content">
-                                    <p class="category">Followers</p>
-                                    <h3 class="title">+245</h3>
+                                <div class="kpi_values">
+                                  <div class="big_number_wrapper">
+                                    <div class="big_number">$4,081,500.00</div>
+                                    <div class="big_number_option">Total Billings</div>
+                                  </div>
                                 </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons">update</i> Just Updated
-                                    </div>
+                                <div class="kpi_chart" id='total-Billings'>
+                                      <img src="data:image/png;base64,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" style="width: 199px; height: 115px;">
                                 </div>
                             </div>
+                          </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 card-chart-box">
                             <div class="card">
                                 <div class="card-header card-chart" data-background-color="white">
                                     <div class="ct-chart" id="dailySales"></div>
@@ -245,7 +252,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 card-chart-box">
                             <div class="card">
                                 <div class="card-header card-chart" data-background-color="orange">
                                     <div class="ct-chart" id="dailyMeetings"></div>
@@ -261,7 +268,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 card-chart-box">
                             <div class="card">
                                 <div class="card-header card-chart" data-background-color="red">
                                     <div class="ct-chart" id="completedTasksChart"></div>
@@ -619,5 +626,6 @@
 
 
 <script src="../assets/hc/js/customCode/basicLine.js"></script>
+<script src="../assets/hc/js/customCode/totalBillings.js"></script>
   <script src="../assets/hc/js/customCode/misc.js"></script>
 </html>
